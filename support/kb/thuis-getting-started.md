@@ -150,11 +150,14 @@ Het dashboard heeft tegels die detailschermen openen:
 - **Weer** — buitencondities die de zonvoorspelling gebruikt.
 - **Beste moment** — wanneer het het groenst/goedkoopst is om stroom te gebruiken.
 - **Laadpaal** — live laadpaalstatus, besturing en historie (PlugChoice).
-- **Klimaat** — binnen- en buitentemperatuur en luchtvochtigheid van alle sensoren
-  die aan Home Assistant zijn gekoppeld, gegroepeerd per kamer en hernoembaar. Dit
-  scherm bevat ook de **ventilatietip**: kies daar een binnen- en een
-  buitentemperatuursensor, en het dashboard vertelt wanneer het een goed moment is
-  om te luchten (warmer dan 20 °C binnen en merkbaar koeler buiten).
+- **Klimaat** — binnen- en buitentemperatuur, luchtvochtigheid en dauwpunt van alle
+  sensoren die aan Home Assistant zijn gekoppeld, gegroepeerd per kamer en
+  hernoembaar. Dit scherm bevat ook de **ventilatietip**: kies daar een binnen- en
+  een buitentemperatuursensor, en het dashboard vertelt wanneer het een goed moment
+  is om te luchten — warmer dan 20 °C binnen en merkbaar koeler buiten, en als de
+  vochtsensoren er zijn ook: buitenlucht die écht droger is. Zie
+  **[Dauwpunt — en waarom het bij ventileren telt](dauwpunt.html)** voor waarom de
+  luchtvochtigheid in procenten je hier op het verkeerde been zet.
 - **Huis Energie Efficiëntie** — hoe je huis presteert, op basis van
   binnentemperatuur, vloeroppervlak en woningtype (stel deze in onder Instellingen).
 
@@ -447,11 +450,14 @@ The dashboard has tiles that open detailed screens:
 - **Weather (Weer)** — outdoor conditions used by the solar forecast.
 - **Best time (Beste moment)** — when it's greenest/cheapest to use power.
 - **Charger (Laadpaal)** — live charger status, control and history (PlugChoice).
-- **Climate (Klimaat)** — indoor and outdoor temperature and humidity from any
-  sensors connected to Home Assistant, grouped per room and renameable. This
-  screen also holds the **ventilation tip**: pick an indoor and an outdoor
+- **Climate (Klimaat)** — indoor and outdoor temperature, humidity and dew point
+  from any sensors connected to Home Assistant, grouped per room and renameable.
+  This screen also holds the **ventilation tip**: pick an indoor and an outdoor
   temperature sensor there, and the dashboard tells you when it's a good moment
-  to air the house (warmer than 20 °C inside and noticeably cooler outside).
+  to air the house — warmer than 20 °C inside and noticeably cooler outside, plus,
+  if humidity sensors are available, outdoor air that is genuinely drier. See
+  **[Dew point — and why it matters for ventilation](dauwpunt.html)** for why
+  relative humidity misleads you here.
 - **Home efficiency (Huis Energie Efficiëntie)** — how your home performs, based
   on indoor temperature, floor area and house type (set these under Settings).
 

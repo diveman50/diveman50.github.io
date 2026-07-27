@@ -128,6 +128,17 @@ h2 { font-size: 20px; font-weight: 700; margin: 0 0 4px; }
 .app-tile .meta span { color: var(--muted); font-size: 14px; }
 .app-tile .chev { margin-left: auto; color: var(--muted); }
 
+/* Verdiepend artikel dat bij de handleiding erboven hoort: ingesprongen en met
+   een verbindingsstreep i.p.v. de scheidingslijn, zodat het als onderdeel van
+   die handleiding leest en niet als los onderwerp. */
+.app-tile.sub {
+  margin-left: 20px;
+  padding-left: 16px;
+  border-left: 2px solid var(--card-stroke);
+}
+.app-tile + .app-tile.sub { margin-top: 12px; padding-top: 0; border-top: none; }
+.app-tile.sub .meta strong { font-size: 15px; }
+
 ol, ul { color: var(--muted); padding-left: 20px; margin: 8px 0; }
 li { margin: 6px 0; }
 

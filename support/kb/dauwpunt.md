@@ -59,6 +59,9 @@ Nu kijkt hij naar allebei:
 
 Zijn er geen vochtsensoren, dan valt de tip terug op alleen de temperatuur.
 
+Dit artikel hoort bij de **[complete handleiding van Thuis](thuis-getting-started.html)**;
+daar staat hoe je de sensoren koppelt en de ventilatietip instelt.
+
 Op het Klimaat-scherm staat het dauwpunt bij elke sensor, binnen en buiten, zodat
 je ze onderling kunt vergelijken. Voor de buitenwaarde gebruikt de app je eigen
 vochtsensor als die er is, en anders de weersvoorspelling. Dat scheelt: een
@@ -147,6 +150,9 @@ outside. Now it checks both:
   off on measurement noise.
 
 With no humidity sensors available, the tip falls back to temperature alone.
+
+This article accompanies the **[complete Thuis guide](thuis-getting-started.html)**,
+which covers connecting the sensors and setting up the ventilation tip.
 
 The Climate screen shows the dew point for every sensor, indoors and out, so you
 can compare them. For the outdoor value the app prefers your own humidity sensor
