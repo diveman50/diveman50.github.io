@@ -51,11 +51,22 @@ De ventilatietip op het dashboard keek vroeger alleen of het buiten koeler was.
 Nu kijkt hij naar allebei:
 
 - **Afkoelen** — daarvoor telt de temperatuur: binnen boven 20 °C en buiten
-  minstens 1 °C koeler.
+  minstens 1 °C koeler. Het dauwpunt is hier geen voorwaarde maar een rem: is de
+  buitenlucht duidelijk vochtiger (meer dan een halve graad dauwpunt), dan blijft
+  de tip weg, want dan koel je wel maar maak je het binnen klam.
 - **Ontvochtigen** — daarvoor telt het dauwpunt: buiten moet minstens 1 °C
-  droger zijn. Die marge zit erin omdat vochtsensoren er zo'n 2 à 3% naast
-  zitten, wat ongeveer een halve graad dauwpunt scheelt — zonder marge zou de
-  tip op meetruis aan en uit springen.
+  droger zijn, en het mag er binnen niet warmer van worden.
+
+Die twee staan los van elkaar: elk van beide is op zichzelf een goede reden om
+een raam open te zetten. Is het 25 °C binnen en 20 °C buiten met even vochtige
+lucht, dan lucht je puur om af te koelen — dat het niet droger wordt, is geen
+bezwaar. De tip zegt erbij wat je wint: koelen, drogen, of allebei.
+
+De marges verschillen bewust. Om te bewéren dat het buiten droger is wil je
+zekerheid (1 °C); om te voorkómen dat je het binnen klammer maakt wil je juist
+voorzichtig zijn (een halve graad). Beide dekken de meetonzekerheid van een
+vochtsensor, die er al gauw 2 à 3% naast zit — zonder marge zou de tip op
+meetruis aan en uit springen.
 
 Zijn er geen vochtsensoren, dan valt de tip terug op alleen de temperatuur.
 
@@ -143,11 +154,21 @@ The dashboard's ventilation tip used to check only whether it was cooler
 outside. Now it checks both:
 
 - **Cooling** — that's about temperature: above 20 °C indoors and at least 1 °C
-  cooler outside.
-- **Drying** — that's about dew point: at least 1 °C drier outside. That margin
-  is there because humidity sensors are typically 2–3% off, which works out to
-  roughly half a degree of dew point — without it the tip would flicker on and
-  off on measurement noise.
+  cooler outside. Dew point isn't a condition here but a brake: if the outdoor
+  air is clearly damper (more than half a degree of dew point), the tip stays
+  away, because then you cool the room but make it clammy.
+- **Drying** — that's about dew point: at least 1 °C drier outside, and it must
+  not warm the room up.
+
+The two are independent: either one on its own is a good reason to open a window.
+At 25 °C indoors and 20 °C outside with equally humid air, you're airing purely
+to cool down — that it won't get drier is no objection. The tip says which you're
+getting: cooling, drying, or both.
+
+The margins differ on purpose. To *claim* the air outside is drier you want
+confidence (1 °C); to *avoid* making the room clammier you want caution (half a
+degree). Both cover the uncertainty of a humidity sensor, which is easily 2–3%
+off — without a margin the tip would flicker on and off on measurement noise.
 
 With no humidity sensors available, the tip falls back to temperature alone.
 
