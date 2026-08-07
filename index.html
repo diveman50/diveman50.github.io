@@ -7,7 +7,7 @@
   <meta name="description" content="Polderpijplijn — persoonlijke apps, met aandacht gemaakt. Geen tracking, geen advertenties.">
   <link rel="icon" type="image/png" href="assets/polder_favicon.png">
   <link rel="apple-touch-icon" href="assets/polder_favicon.png">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <script src="lang.js?v=2"></script>
   <script src="email.js?v=1"></script>
 </head>
@@ -71,12 +71,17 @@
         </span>
         <span class="chev" aria-hidden="true">&rsaquo;</span>
       </a>
+      <!-- Geen badge in deze tegel: die is zelf een link naar de detailpagina,
+           en een link in een link mag niet in HTML. De badge staat op
+           grimreader/, waar hij een eigen link kan zijn. -->
       <a class="app-tile" href="grimreader/">
         <img src="assets/grimmory_icon.png" alt="">
         <span class="meta">
           <strong>Grim Reader</strong>
           <span lang="nl">Lees je eigen, zelf-gehoste boekenbibliotheek</span>
           <span lang="en">Read your own self-hosted book library</span>
+          <span class="store-badge" lang="nl">In de App Store</span>
+          <span class="store-badge" lang="en">On the App Store</span>
         </span>
         <span class="chev" aria-hidden="true">&rsaquo;</span>
       </a>

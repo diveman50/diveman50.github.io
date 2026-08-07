@@ -169,3 +169,16 @@ code {
 .updated { color: var(--muted); font-size: 14px; margin-top: 0; }
 
 h3 { font-size: 16px; margin: 22px 0 4px; }
+
+/* Markering op een app-tegel voor wat al in een store staat. Klein en groen,
+   zodat het opvalt tussen de projecten die er nog niet zijn. */
+.app-tile .meta .store-badge {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(77, 217, 140, 0.16);   /* --back, doorzichtig */
+  color: var(--back);
+  font-size: 12px;
+  font-weight: 600;
+}

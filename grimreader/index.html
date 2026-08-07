@@ -7,7 +7,7 @@
   <meta name="description" content="Grim Reader: blader, download en lees boeken uit je eigen, zelf-gehoste Grimmory-bibliotheek. Info, instructies en privacy.">
   <link rel="icon" type="image/png" href="../assets/grimmory_icon.png">
   <link rel="apple-touch-icon" href="../assets/grimmory_icon.png">
-  <link rel="stylesheet" href="../styles.css?v=4">
+  <link rel="stylesheet" href="../styles.css?v=5">
   <script src="../lang.js?v=2"></script>
   <script src="../email.js?v=1"></script>
 </head>
@@ -39,14 +39,21 @@
       <p lang="en">Grim Reader is available for iPhone and iPad. You need your own
         Grimmory server; without one you can still explore the app using the
         offline demo.</p>
-      <p><a class="app-tile" href="https://apps.apple.com/app/id6782366876"
-            style="display:inline-flex;width:auto;gap:8px">
-        <span class="meta">
-          <strong lang="nl">Download in de App Store</strong>
-          <strong lang="en">Download on the App Store</strong>
-        </span>
-        <span class="chev" aria-hidden="true">&rsaquo;</span>
-      </a></p>
+      <!-- Officiële Apple-badge uit Marketing Tools, per taal. Apple staat geen
+           eigen varianten toe: niet verkleuren, niet uitrekken, en minimaal een
+           tiende van de hoogte aan vrije ruimte eromheen. Vandaar de marge. -->
+      <p style="margin-top:16px">
+        <a href="https://apps.apple.com/app/id6782366876" lang="nl"
+           style="display:inline-block;padding:4px">
+          <img src="../assets/appstore-badge-nl.svg" alt="Download in de App Store"
+               style="height:40px;width:auto">
+        </a>
+        <a href="https://apps.apple.com/app/id6782366876" lang="en"
+           style="display:inline-block;padding:4px">
+          <img src="../assets/appstore-badge-en.svg" alt="Download on the App Store"
+               style="height:40px;width:auto">
+        </a>
+      </p>
     </section>
 
     <section class="card">
