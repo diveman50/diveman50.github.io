@@ -225,24 +225,46 @@ zelf gelezen, en het blijft offline beschikbaar.
 
 ---
 
-## OPDS-catalogi
+## Een OPDS-catalogus toevoegen — stap voor stap
 
-Voeg je **eigen OPDS-catalogus** toe onder **Instellingen → Server toevoegen →
-OPDS** — bijvoorbeeld een Calibre-Web-server of een andere OPDS-feed die je
-vertrouwt. Je bladert erdoorheen en downloadt rechtstreeks in *Mijn boeken*. Een
-catalogus kan een optionele login hebben; het wachtwoord gaat in de
-sleutelhanger.
+OPDS is een open standaard voor boekencatalogi. Veel boekservers bieden er een —
+bijvoorbeeld **Calibre-Web** — en Grim Reader kan er rechtstreeks doorheen
+bladeren. Grim Reader levert zelf geen boeken of catalogi mee: je wijst je eigen
+bron aan.
 
-Grim Reader levert zelf geen boeken of catalogi mee — je wijst je eigen bron aan.
+1. Open **Instellingen → Servers**.
+2. Tik op **Server toevoegen** en kies **OPDS-catalogus**.
+3. Vul in:
+   - **Naam** — een label naar keuze.
+   - **Feed-URL** — het OPDS-adres van de catalogus, bijvoorbeeld
+     `https://mijn-calibre.example.com/opds`. Gebruik `https://`; iOS blokkeert
+     onbeveiligde `http://`-adressen, behalve op je eigen lokale netwerk.
+   - **Gebruikersnaam** en **wachtwoord** — alleen als de catalogus een login
+     vereist. Leeg laten mag.
+4. Tik op **Bewaar**. Het wachtwoord gaat in de **sleutelhanger**, niet in de
+   app-instellingen.
+
+De catalogus verschijnt nu in de **Servers**-lijst. Tik erop om erdoorheen te
+bladeren, en open een boek om het rechtstreeks in **Mijn boeken** te downloaden.
+
+> **Zoeken.** Grim Reader vraagt de catalogus zelf om zijn zoekadres, dus meestal
+> werkt zoeken vanzelf. Doet het dat niet, dan kun je bij het bewerken van de
+> catalogus een **zoek-URL** invullen met `{searchTerms}` op de plek van de
+> zoekterm.
+
+> **Alleen jouw bronnen.** Voeg alleen catalogi toe die je vertrouwt en waarvan je
+> de boeken mag downloaden — bijvoorbeeld je eigen Calibre-Web-server of een
+> publiek-domeincatalogus. De app controleert de inhoud van een catalogus niet.
 
 ---
 
-## Boeken lezen van een WebDAV-server
+## Een WebDAV-server toevoegen — stap voor stap
 
-Naast je Grimmory-server kan Grim Reader ook EPUB- en PDF-boeken rechtstreeks van
-een **WebDAV**-server lezen — bijvoorbeeld een NAS (Synology, QNAP) of een
-Nextcloud-share. Dit werkt los van Grimmory, dus je kunt het gebruiken met of
-zonder een ingelogde Grimmory-server.
+Grim Reader leest EPUB's, PDF's, strips (CBZ) en audioboeken rechtstreeks van een
+**WebDAV**-server — bijvoorbeeld een NAS (Synology, QNAP) of een Nextcloud-share.
+Dit werkt los van Grimmory, dus je kunt het gebruiken met of zonder een ingelogde
+Grimmory-server. Grote audioboeken speel je rechtstreeks van de server, zonder ze
+eerst helemaal te downloaden.
 
 ### Eén plek voor al je servers
 
@@ -532,24 +554,43 @@ itself, and it stays available offline.
 
 ---
 
-## OPDS catalogues
+## Adding an OPDS catalogue — step by step
 
-Add your **own OPDS catalogue** under **Settings → Add server → OPDS** — for
-example a Calibre-Web server or any other OPDS feed you trust. You browse through
-it and download straight into *My books*. A catalogue can have an optional login;
-the password goes into the Keychain.
+OPDS is an open standard for book catalogues. Many book servers offer one — for
+example **Calibre-Web** — and Grim Reader can browse it directly. Grim Reader
+ships no books or catalogues of its own: you point it at your own source.
 
-Grim Reader ships no books or catalogues of its own — you point it at your own
-source.
+1. Open **Settings → Servers**.
+2. Tap **Add server** and choose **OPDS catalogue**.
+3. Fill in:
+   - **Name** — a label of your choice.
+   - **Feed URL** — the catalogue's OPDS address, for example
+     `https://my-calibre.example.com/opds`. Use `https://`; iOS blocks insecure
+     `http://` addresses, except on your own local network.
+   - **Username** and **password** — only if the catalogue requires a login. Leave
+     empty otherwise.
+4. Tap **Save**. The password goes into the **Keychain**, not the app settings.
+
+The catalogue now appears in the **Servers** list. Tap it to browse through it,
+and open a book to download it straight into **My books**.
+
+> **Search.** Grim Reader asks the catalogue for its own search address, so search
+> usually works automatically. If it doesn't, you can enter a **search URL** when
+> editing the catalogue, with `{searchTerms}` where the search term goes.
+
+> **Your sources only.** Only add catalogues you trust and whose books you're
+> allowed to download — for example your own Calibre-Web server or a public-domain
+> catalogue. The app doesn't vet a catalogue's contents.
 
 ---
 
-## Reading books from a WebDAV server
+## Adding a WebDAV server — step by step
 
-Besides your Grimmory server, Grim Reader can also read EPUB and PDF books
-straight from a **WebDAV** server — for example a NAS (Synology, QNAP) or a
-Nextcloud share. This works independently of Grimmory, so you can use it with or
-without a Grimmory server signed in.
+Grim Reader reads EPUBs, PDFs, comics (CBZ) and audiobooks straight from a
+**WebDAV** server — for example a NAS (Synology, QNAP) or a Nextcloud share. This
+works independently of Grimmory, so you can use it with or without a Grimmory
+server signed in. Large audiobooks stream straight from the server, without
+downloading them in full first.
 
 ### One place for all your servers
 
