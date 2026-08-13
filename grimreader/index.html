@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grim Reader — je eigen bibliotheek</title>
-  <meta name="description" content="Grim Reader: blader, download en lees boeken uit je eigen, zelf-gehoste Grimmory-bibliotheek. Info, instructies en privacy.">
+  <meta name="description" content="Grim Reader: lees boeken en strips en luister audioboeken uit je eigen bronnen — een NAS of Nextcloud (WebDAV), een OPDS-catalogus, een Grimmory-server of gewoon je eigen bestanden. Offline, privé, zonder cloud van ons.">
   <link rel="icon" type="image/png" href="../assets/grimmory_icon.png">
   <link rel="apple-touch-icon" href="../assets/grimmory_icon.png">
   <link rel="stylesheet" href="../styles.css?v=5">
@@ -24,21 +24,25 @@
     <header class="hero">
       <img src="../assets/grimmory_icon.png" alt="Grim Reader-icoon">
       <h1>Grim Reader</h1>
-      <p class="lead" lang="nl">Blader, download en lees boeken uit je eigen, zelf-gehoste
-        Grimmory-bibliotheek — overzichtelijk en offline.</p>
-      <p class="lead" lang="en">Browse, download and read books from your own self-hosted
-        Grimmory library — clear and offline.</p>
+      <p class="lead" lang="nl">Lees boeken en strips en luister audioboeken uit je
+        eigen bronnen — een NAS, een OPDS-catalogus, een Grimmory-server of gewoon
+        je eigen bestanden. Overzichtelijk, offline en privé.</p>
+      <p class="lead" lang="en">Read books and comics and listen to audiobooks from
+        your own sources — a NAS, an OPDS catalog, a Grimmory server or simply your
+        own files. Clear, offline and private.</p>
     </header>
 
     <section class="card" style="border-left:4px solid var(--back)">
       <h2 style="margin-bottom:8px" lang="nl">Nu in de App Store</h2>
       <h2 style="margin-bottom:8px" lang="en">Now on the App Store</h2>
-      <p lang="nl">Grim Reader is beschikbaar voor iPhone en iPad. Je hebt er een
-        eigen Grimmory-server voor nodig; zonder server kun je de app wel bekijken
-        met de offline demo.</p>
-      <p lang="en">Grim Reader is available for iPhone and iPad. You need your own
-        Grimmory server; without one you can still explore the app using the
-        offline demo.</p>
+      <p lang="nl">Grim Reader is beschikbaar voor iPhone en iPad. Je wijst je
+        eigen bron aan — een NAS of Nextcloud (WebDAV), een OPDS-catalogus of een
+        Grimmory-server — of je importeert gewoon je eigen bestanden. Geen server?
+        Bekijk de app dan met de offline demo.</p>
+      <p lang="en">Grim Reader is available for iPhone and iPad. You point it at
+        your own source — a NAS or Nextcloud (WebDAV), an OPDS catalog or a
+        Grimmory server — or you simply import your own files. No server? Explore
+        the app using the offline demo.</p>
       <!-- Officiële Apple-badge uit Marketing Tools, per taal. Apple staat geen
            eigen varianten toe: niet verkleuren, niet uitrekken, en minimaal een
            tiende van de hoogte aan vrije ruimte eromheen. Vandaar de marge. -->
@@ -59,28 +63,38 @@
     <section class="card">
       <h2 style="margin-bottom:8px" lang="nl">Wat het doet</h2>
       <h2 style="margin-bottom:8px" lang="en">What it does</h2>
-      <p lang="nl">Grim Reader is een leesclient voor je eigen
-        <strong>Grimmory</strong>-server. Je bladert door je bibliotheken, series,
-        schrijvers en planken, downloadt boeken en leest ze offline. EPUB-boeken
-        worden getoond in een schermvullende paginalezer; PDF's worden ook
-        ondersteund. Beschikbaar voor iOS. De app praat alleen met jouw eigen
-        server — er zit geen account of cloud van ons tussen.</p>
-      <p lang="en">Grim Reader is a reading client for your own
-        <strong>Grimmory</strong> server. You browse your libraries, series,
-        authors and shelves, download books and read them offline. EPUB books are
-        shown in a full-screen paginated reader; PDFs are supported too. Available
-        for iOS. The app only talks to your own server — there's no account or
-        cloud of ours in between.</p>
-      <p lang="nl">Je hebt niet per se een server nodig: voeg via <strong>"Open
-        met …"</strong> je eigen EPUB- en PDF-bestanden toe en lees ze offline,
-        ook zonder Grimmory. En onder <strong>Ontdek</strong> blader je door
-        gratis publieke-domeinboeken van <strong>Project Gutenberg</strong> —
-        ruim 70.000 titels om te downloaden en te lezen.</p>
-      <p lang="en">You don't strictly need a server: add your own EPUB and PDF
-        files via <strong>"Open with …"</strong> and read them offline, even
-        without Grimmory. And under <strong>Discover</strong> you can browse free
-        public-domain books from <strong>Project Gutenberg</strong> — over 70,000
-        titles to download and read.</p>
+      <p lang="nl">Grim Reader is een complete e-reader die leest uit <strong>jouw
+        eigen bronnen</strong>. Je bladert door je bibliotheek of gewoon door de
+        mappen op je server, en de app haalt zelf de omslag, titel en schrijver
+        uit elk bestand. Wat je aankunt:</p>
+      <p lang="en">Grim Reader is a complete e-reader that reads from <strong>your
+        own sources</strong>. You browse your library or simply the folders on your
+        server, and the app pulls the cover, title and author from each file itself.
+        What it handles:</p>
+      <ul lang="nl">
+        <li><strong>Boeken</strong> — EPUB in een schermvullende paginalezer, en PDF.</li>
+        <li><strong>Strips</strong> — CBZ met bladeren per pagina en knijp-zoomen.</li>
+        <li><strong>Audioboeken</strong> — met bediening op het toegangsscherm, en
+          doorspelen op de achtergrond. Grote audioboeken speel je rechtstreeks
+          van je server, zonder ze eerst helemaal te downloaden.</li>
+      </ul>
+      <ul lang="en">
+        <li><strong>Books</strong> — EPUB in a full-screen paginated reader, and PDF.</li>
+        <li><strong>Comics</strong> — CBZ with page-by-page reading and pinch-to-zoom.</li>
+        <li><strong>Audiobooks</strong> — with lock-screen controls and background
+          playback. Large audiobooks stream straight from your server, without
+          downloading them in full first.</li>
+      </ul>
+      <p lang="nl">Schrijvers krijgen een foto en beschrijving (via Wikipedia en
+        Open Library), je maakt eigen <strong>collecties</strong> en favorieten, en
+        je kunt titel, schrijver en omslag zelf <strong>aanpassen</strong> — desgewenst
+        tot in het boekbestand zelf. Alles blijft offline beschikbaar, en de app
+        praat alleen met de server die jij instelt.</p>
+      <p lang="en">Authors get a photo and description (via Wikipedia and Open
+        Library), you build your own <strong>collections</strong> and favorites, and
+        you can <strong>edit</strong> title, author and cover yourself — even into the
+        book file itself if you want. Everything stays available offline, and the app
+        only talks to the server you set up.</p>
       <p lang="nl"><a href="verhaal.html">Lees het verhaal: van Grimmory-lezer naar complete e-reader &rsaquo;</a></p>
       <p lang="en"><a href="verhaal.html">Read the story: from Grimmory reader to a complete e-reader &rsaquo;</a></p>
     </section>
@@ -115,17 +129,23 @@
       <h2 style="margin-bottom:8px" lang="en">Getting started</h2>
       <ol lang="nl">
         <li>Open de app.</li>
-        <li>Vul het adres van je <strong>Grimmory</strong>-server in — lokaal
-          (bijv. <code>192.168.1.10:6060</code>) of via je eigen externe adres.</li>
-        <li>Vul je <strong>gebruikersnaam</strong> en <strong>wachtwoord</strong> in.</li>
-        <li>Tik op <strong>Inloggen</strong>.</li>
+        <li>Ga naar <strong>Instellingen &rsaquo; Server toevoegen</strong> en kies
+          je bron: WebDAV, OPDS of Grimmory.</li>
+        <li>Vul het <strong>adres</strong> in — lokaal (bijv.
+          <code>192.168.1.10:5000</code>) of je eigen externe adres — en zo nodig
+          je gebruikersnaam en wachtwoord.</li>
+        <li>Klaar. Of sla het over en voeg via <strong>"Open met …"</strong> gewoon
+          je eigen bestanden toe.</li>
       </ol>
       <ol lang="en">
         <li>Open the app.</li>
-        <li>Enter the address of your <strong>Grimmory</strong> server — local
-          (e.g. <code>192.168.1.10:6060</code>) or via your own remote address.</li>
-        <li>Enter your <strong>username</strong> and <strong>password</strong>.</li>
-        <li>Tap <strong>Log in</strong>.</li>
+        <li>Go to <strong>Settings &rsaquo; Add server</strong> and choose your
+          source: WebDAV, OPDS or Grimmory.</li>
+        <li>Enter the <strong>address</strong> — local (e.g.
+          <code>192.168.1.10:5000</code>) or your own remote address — and your
+          username and password if needed.</li>
+        <li>Done. Or skip it and just add your own files via
+          <strong>"Open with …"</strong>.</li>
       </ol>
       <h3 lang="nl">Op meerdere toestellen</h3>
       <h3 lang="en">On multiple devices</h3>
@@ -136,24 +156,38 @@
     </section>
 
     <section class="card">
-      <h2 style="margin-bottom:8px">Grimmory</h2>
-      <p lang="nl">Grim Reader bouwt voort op een dienst die je zelf beheert:</p>
-      <p lang="en">Grim Reader builds on a service that you manage yourself:</p>
+      <h2 style="margin-bottom:8px" lang="nl">Je eigen bronnen</h2>
+      <h2 style="margin-bottom:8px" lang="en">Your own sources</h2>
+      <p lang="nl">Grim Reader levert zelf geen boeken. Je wijst je eigen bron aan;
+        de app leest daaruit en bewaart je adres en login op je toestel:</p>
+      <p lang="en">Grim Reader provides no books of its own. You point it at your own
+        source; the app reads from it and keeps your address and login on your device:</p>
       <ul lang="nl">
+        <li><strong>WebDAV</strong> — een NAS (zoals Synology of QNAP), Nextcloud of
+          een andere WebDAV-server. Blader door je mappen; de app vult omslag en
+          gegevens vanzelf aan.</li>
+        <li><strong>OPDS</strong> — je eigen catalogus, bijvoorbeeld een
+          Calibre-Web-server. Voeg het adres toe en blader erdoorheen.</li>
         <li><strong><a href="https://grimmory.org" target="_blank" rel="noopener">Grimmory</a></strong>
-          — een zelf-gehoste server voor je digitale boekenverzameling, met
-          bibliotheken, series, schrijvers, planken en metadata. Hieruit haalt
-          Grim Reader je boeken en omslagen.</li>
+          — een zelf-gehoste server voor je boekenverzameling, met bibliotheken,
+          series, schrijvers en planken.</li>
+        <li><strong>Eigen bestanden</strong> — voeg via <strong>"Open met …"</strong>
+          je EPUB's, PDF's, strips en audioboeken toe en lees ze offline, zonder
+          server.</li>
       </ul>
       <ul lang="en">
+        <li><strong>WebDAV</strong> — a NAS (such as Synology or QNAP), Nextcloud or
+          any other WebDAV server. Browse your folders; the app fills in cover and
+          details automatically.</li>
+        <li><strong>OPDS</strong> — your own catalog, for example a Calibre-Web
+          server. Add the address and browse through it.</li>
         <li><strong><a href="https://grimmory.org" target="_blank" rel="noopener">Grimmory</a></strong>
-          — a self-hosted server for your digital book collection, with
-          libraries, series, authors, shelves and metadata. This is where
-          Grim Reader gets your books and covers.</li>
+          — a self-hosted server for your book collection, with libraries, series,
+          authors and shelves.</li>
+        <li><strong>Your own files</strong> — add your EPUBs, PDFs, comics and
+          audiobooks via <strong>"Open with …"</strong> and read them offline,
+          without a server.</li>
       </ul>
-      <p lang="nl">Je beheert de server zelf; je adres en login blijven op je toestel.</p>
-      <p lang="en">You manage the server yourself; your address and login stay on your
-        device.</p>
     </section>
 
     <section class="card">

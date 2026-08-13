@@ -8,17 +8,22 @@ description: From running a Grimmory server to reading, organising and managing 
 
 <div lang="nl" markdown="1">
 
-Grim Reader is een lees-app voor **Grimmory**, een zelf-gehoste server voor je
-eigen digitale boekencollectie. De app praat alleen met je eigen server — er zit
-geen account of cloud van ons tussen. Deze handleiding neemt je stap voor stap mee
-van niets naar een werkende bibliotheek.
+Grim Reader is een complete e-reader die leest uit **je eigen bronnen** — een
+NAS of Nextcloud (WebDAV), een OPDS-catalogus, een Grimmory-server, of gewoon je
+eigen bestanden. De app praat alleen met de server die jij instelt — er zit geen
+account of cloud van ons tussen. Deze handleiding neemt je stap voor stap mee.
 
 ## Wat je nodig hebt
 
-- Een **Grimmory-server** die ergens draait waar jij de baas bent (een NAS, een
-  thuisserver, een kleine VPS).
 - De **Grim Reader**-app op je iPhone of iPad.
-- Je boeken, in EPUB-, PDF-, strip- (CBZ/CBR) of audioboek-formaat.
+- **Eén bron naar keuze:** een WebDAV-server (NAS/Nextcloud), een OPDS-catalogus
+  (zoals Calibre-Web), of een Grimmory-server. Of helemaal geen server — dan voeg
+  je gewoon je eigen bestanden toe.
+- Je boeken, in EPUB-, PDF-, strip- (CBZ) of audioboek-formaat.
+
+Deze handleiding beschrijft hieronder eerst de Grimmory-route in detail; wil je
+WebDAV, OPDS of losse bestanden gebruiken, spring dan naar de betreffende sectie
+verderop.
 
 ---
 
@@ -220,16 +225,15 @@ zelf gelezen, en het blijft offline beschikbaar.
 
 ---
 
-## Internetboeken — gratis catalogi
+## OPDS-catalogi
 
-Onder **Internetboeken** kun je openbare boekencatalogi doorbladeren en
-rechtstreeks in *Mijn boeken* downloaden:
+Voeg je **eigen OPDS-catalogus** toe onder **Instellingen → Server toevoegen →
+OPDS** — bijvoorbeeld een Calibre-Web-server of een andere OPDS-feed die je
+vertrouwt. Je bladert erdoorheen en downloadt rechtstreeks in *Mijn boeken*. Een
+catalogus kan een optionele login hebben; het wachtwoord gaat in de
+sleutelhanger.
 
-- **Project Gutenberg** zit ingebouwd — tienduizenden gratis, publiek-domein
-  klassiekers.
-- Voeg je **eigen OPDS-catalogi** toe onder **Instellingen → Mijn catalogi** —
-  bijvoorbeeld een Calibre-Web-server of een andere OPDS-feed. Een catalogus kan
-  een optionele login hebben; het wachtwoord gaat in de sleutelhanger.
+Grim Reader levert zelf geen boeken of catalogi mee — je wijst je eigen bron aan.
 
 ---
 
@@ -319,17 +323,21 @@ probleem te melden, een verbetering voor te stellen of een vraag te stellen.
 
 <div lang="en" markdown="1">
 
-Grim Reader is a reading client for **Grimmory**, a self-hosted server for your
-own digital book collection. The app talks only to your own server — there is no
-account or cloud of ours in between. This guide takes you from nothing to a
-working library, step by step.
+Grim Reader is a complete e-reader that reads from **your own sources** — a NAS
+or Nextcloud (WebDAV), an OPDS catalog, a Grimmory server, or simply your own
+files. The app talks only to the server you set up — there is no account or cloud
+of ours in between. This guide takes you through it step by step.
 
 ## What you need
 
-- A **Grimmory server** running somewhere you control (a NAS, a home server, a
-  small VPS).
 - The **Grim Reader** app on your iPhone or iPad.
-- Your books, in EPUB, PDF, comic (CBZ/CBR) or audiobook format.
+- **One source of your choice:** a WebDAV server (NAS/Nextcloud), an OPDS catalog
+  (such as Calibre-Web), or a Grimmory server. Or no server at all — then you just
+  add your own files.
+- Your books, in EPUB, PDF, comic (CBZ) or audiobook format.
+
+The guide below first covers the Grimmory route in detail; if you want to use
+WebDAV, OPDS or standalone files, jump to the relevant section further down.
 
 ---
 
@@ -524,16 +532,15 @@ itself, and it stays available offline.
 
 ---
 
-## Internet books — free catalogues
+## OPDS catalogues
 
-Under **Internet books** you can browse public book catalogues and download
-straight into *My books*:
+Add your **own OPDS catalogue** under **Settings → Add server → OPDS** — for
+example a Calibre-Web server or any other OPDS feed you trust. You browse through
+it and download straight into *My books*. A catalogue can have an optional login;
+the password goes into the Keychain.
 
-- **Project Gutenberg** is built in — tens of thousands of free, public-domain
-  classics.
-- Add your **own OPDS catalogues** under **Settings → My catalogues** — for
-  example a Calibre-Web server or any other OPDS feed. A catalogue can have an
-  optional login; the password goes into the Keychain.
+Grim Reader ships no books or catalogues of its own — you point it at your own
+source.
 
 ---
 

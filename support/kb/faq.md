@@ -27,11 +27,11 @@ niet? Mail ons dan op `info@polderpijplijn.nl`.
 
 ## Kan ik Grim Reader zonder server gebruiken?
 
-Ja. Tik op **Offline demo** op het inlogscherm om rond te kijken met
+Ja. Tik op **Offline demo bekijken** in **Instellingen** om rond te kijken met
 voorbeeldboeken, of voeg je eigen EPUB/PDF-bestanden toe via de **+**-knop in
 *Mijn boeken* (of "Open met…" vanuit een andere app) — geen server nodig. Een
-Grimmory- of WebDAV-server voegt een gesynchroniseerde bibliotheek toe, maar dat
-is optioneel.
+WebDAV-server (NAS/Nextcloud), een OPDS-catalogus of een Grimmory-server voegt
+een volledige bibliotheek toe, maar dat is optioneel.
 
 ## Waarom stopt het voorlezen op mijn iPad als ik naar het beginscherm ga?
 
@@ -82,10 +82,10 @@ Email us at `info@polderpijplijn.nl` instead.
 
 ## Can I use Grim Reader without a server?
 
-Yes. Tap **Offline demo** on the login screen to look around with sample books,
+Yes. Tap **View offline demo** in **Settings** to look around with sample books,
 or add your own EPUB/PDF files via the **+** button in *My books* (or "Open
-with…" from any app) — no server required. A Grimmory or WebDAV server adds a
-synced library on top, but it's optional.
+with…" from any app) — no server required. A WebDAV server (NAS/Nextcloud), an
+OPDS catalog or a Grimmory server adds a full library on top, but it's optional.
 
 ## Why does read-aloud stop on my iPad when I go to the Home Screen?
 
