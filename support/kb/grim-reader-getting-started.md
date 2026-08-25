@@ -125,6 +125,48 @@ hele server hoeft te scannen:
 Open een boek voor de details en **Download** het. Gedownloade boeken verschijnen
 onder **Mijn boeken** en blijven offline beschikbaar.
 
+### Onderweg bij je NAS — een tweede adres
+
+Thuis bereik je je NAS via zijn adres op je eigen netwerk. Buiten de deur werkt
+dat adres niet: `192.168.…` bestaat alleen thuis. Met **Tailscale** — een gratis
+VPN die je eigen apparaten met elkaar verbindt — kun je er wél bij, en Grim
+Reader schakelt daar vanzelf naartoe over.
+
+Zo stel je dat in:
+
+1. Installeer **Tailscale** op je NAS én op je iPhone of iPad, en log op allebei
+   in met hetzelfde account.
+2. Kijk in de [Tailscale-console](https://login.tailscale.com/admin/machines) hoe
+   je NAS daar heet. Dat is gewoon de apparaatnaam, bijvoorbeeld `nas`.
+3. Open in Grim Reader **Instellingen → Servers**, tik je WebDAV-server aan en
+   vul het veld **Tweede adres** in onder *Onderweg*: neem je eerste adres over
+   en vervang **alleen het IP-adres** door die naam. De rest van het adres — de
+   poort en het pad erachter — houd je precies hetzelfde.
+4. Tik op **Verbinding testen** en dan **Bewaar**.
+
+Een voorbeeld van hoe die twee zich tot elkaar verhouden:
+
+| Veld | Waarde |
+|---|---|
+| Adres | `http://192.168.2.17:5000/Ebooks` |
+| Tweede adres | `http://nas:5000/Ebooks` |
+
+> Werkt de korte naam niet, gebruik dan de volledige naam die de Tailscale-console
+> erbij toont — die eindigt op `.ts.net`. In dat geval moet het adres `https://`
+> zijn, want iOS laat onversleuteld verkeer alleen toe naar je eigen netwerk en
+> naar namen zonder punten.
+
+Ben je onderweg, zet dan **Tailscale** aan op je iPhone of iPad. Grim Reader
+gebruikt gewoon je gewone adres zolang dat antwoordt, en wijkt uit naar het
+tweede zodra dat niet zo is. Je bibliotheek verandert daar niet van: er wordt
+niets opnieuw doorzocht en je leesvoortgang en favorieten blijven staan. Kom je
+thuis, dan schakelt hij vanzelf terug.
+
+> **Het pad moet gelijk blijven.** Bij het uitwijken vervangt de app alleen het
+> adres van de server, niet wat erachter staat. Wijst het tweede adres naar een
+> andere map, dan komen je boeken onderweg niet aan.
+
+
 ---
 
 ## OPDS — een eigen catalogus
@@ -395,6 +437,47 @@ server every time:
 
 Open any book to see its details, then **Download** it. Downloaded books appear
 under **My books** and stay available offline.
+
+### Reaching your NAS while away — a second address
+
+At home you reach your NAS at its address on your own network. Away from home
+that address means nothing: `192.168.…` only exists at home. **Tailscale** — a
+free VPN that links your own devices together — gets you there anyway, and Grim
+Reader switches over on its own.
+
+Setting it up:
+
+1. Install **Tailscale** on your NAS *and* on your iPhone or iPad, signing in to
+   the same account on both.
+2. Check the [Tailscale console](https://login.tailscale.com/admin/machines) for
+   what your NAS is called there. It's simply the machine name, for example `nas`.
+3. In Grim Reader, open **Settings → Servers**, tap your WebDAV server and fill
+   in **Second address** under *Away from home*: copy your first address and
+   replace **only the IP address** with that name. The rest of the address — the
+   port and the path behind it — stays exactly the same.
+4. Tap **Test connection**, then **Save**.
+
+An example of how the two relate:
+
+| Field | Value |
+|---|---|
+| Address | `http://192.168.2.17:5000/Ebooks` |
+| Second address | `http://nas:5000/Ebooks` |
+
+> If the short name doesn't work, use the full name the Tailscale console shows
+> alongside it — the one ending in `.ts.net`. In that case the address needs to be
+> `https://`, because iOS only allows unencrypted traffic to your own network and
+> to names without dots.
+
+When you're out, switch **Tailscale** on. Grim Reader keeps using your normal
+address for as long as it answers, and falls back to the second one when it
+doesn't. Your library is unaffected: nothing is scanned again and your reading
+progress and favourites stay put. Back home, it switches back by itself.
+
+> **Keep the path identical.** When falling back, the app swaps only the server
+> address, not what comes after it. If the second address points at a different
+> folder, your books won't arrive while you're away.
+
 
 ---
 
